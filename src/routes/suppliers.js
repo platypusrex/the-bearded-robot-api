@@ -6,7 +6,7 @@ import SuppliersController from '../controllers/suppliers';
 const api = 'suppliers';
 const router = new Router();
 
-router.prefix(`/${baseApi}/${api}`);
+router.prefix(`/${api}`);
 
 router.get('/', SuppliersController.find);
 

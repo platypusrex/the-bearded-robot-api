@@ -2,8 +2,8 @@ import 'babel-polyfill';
 import Supplier from '../models/supplierModel';
 
 class SuppliersController {
-	async find(ctx) {
-		ctx.body = await Supplier.find();
+	async find() {
+		this.body = await Supplier.find();
 	}
 
 	async findById(ctx) {
