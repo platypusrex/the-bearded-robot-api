@@ -1,6 +1,5 @@
 import 'babel-polyfill';
 import Router from 'koa-router';
-import { baseApi } from '../config';
 import SuppliersController from '../controllers/suppliers';
 
 const api = 'suppliers';

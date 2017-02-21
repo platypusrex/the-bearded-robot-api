@@ -68,7 +68,6 @@ export function seedDb() {
 
 	suppliers.forEach(supplier => {
 		Supplier.find({"name": supplier.name}).remove().exec();
-
 		new Supplier(supplier).save();
 	});
 }
